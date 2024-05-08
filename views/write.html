@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/css/write.css">
+
+</head>
+
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+
+            <li><a href="/write">Write Notes</a></li>
+            <li><a href="/getnotes">View Notes</a></li>
+            <li><a href="/update">Edit Notes</a></li>
+
+            <li><a href="/login">Logout</a></li>
+        </ul>
+    </nav><br>
+
+    <form onsubmit="addData(event)">
+        <label for="topic">Topic:</label><br>
+        <input type="text" id="topic" placeholder="Topic name"><br>
+        <label for="password">Create Your Password</label><br>
+        <input type="password" id="password" placeholder="create password" required><br>
+        <label for="userNotes">Starts writting Your  Notes :</label><br><br>
+        <textarea id="userNotes" placeholder="Write your notes here..." required></textarea>
+        <button id="btn">Save Notes</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/addNotes.js"></script>
+</body>
+
+</html>
